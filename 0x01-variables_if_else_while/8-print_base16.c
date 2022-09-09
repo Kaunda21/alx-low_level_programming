@@ -1,19 +1,28 @@
+#include <stdio.h>
+/**
+ * main - function
+ *
+ * Return: end program
+ */
 int main(void)
 {
-        int n = 0;
+	int a = '0';
+	int b = 'a';
 
-        while (n < 16)
-        {
-                if (n <= 9)
-                {
-                        putchar(n + '0');
-                }
-                else
-                {
-                        putchar(n + 87);
-                }
-                ++n;
-        }
+	while (a <= '9')
+	{
+		putchar(a);
+		a++;
+	}
 
-        return (0);
+	while (b <= 'f')
+	{
+		putchar(b);
+		b++;
+	}
+
+	putchar(10);
+
+	return (0);
 }
+
